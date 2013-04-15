@@ -30,6 +30,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A6885E4A171C5E4F0097D290 /* GHOST.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = GHOST.tga; path = ../../../GHOST.tga; sourceTree = "<group>"; };
+		A6885E4B171C5E4F0097D290 /* star.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = star.tga; path = ../../../star.tga; sourceTree = "<group>"; };
+		A6885E4C171C5E4F0097D290 /* UFO.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = UFO.tga; path = ../../../UFO.tga; sourceTree = "<group>"; };
 		A6909D471717F262004D3D14 /* OpenGLgame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLgame; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6909D4A1717F262004D3D14 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A6909D4C1717F262004D3D14 /* OpenGLgame.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = OpenGLgame.1; sourceTree = "<group>"; };
@@ -77,6 +80,9 @@
 			children = (
 				A6909D4A1717F262004D3D14 /* main.cpp */,
 				A6909D581717F468004D3D14 /* GameWindow.cpp */,
+				A6885E4A171C5E4F0097D290 /* GHOST.tga */,
+				A6885E4B171C5E4F0097D290 /* star.tga */,
+				A6885E4C171C5E4F0097D290 /* UFO.tga */,
 				A6909D591717F468004D3D14 /* GameWindow.h */,
 				A6909D5C171818E2004D3D14 /* Sprite.cpp */,
 				A6909D5D171818E2004D3D14 /* Sprite.h */,
