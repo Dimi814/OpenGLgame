@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		A6909D4B1717F262004D3D14 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6909D4A1717F262004D3D14 /* main.cpp */; };
 		A6909D4D1717F262004D3D14 /* OpenGLgame.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A6909D4C1717F262004D3D14 /* OpenGLgame.1 */; };
+		A6909D541717F274004D3D14 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6909D531717F274004D3D14 /* OpenGL.framework */; };
+		A6909D561717F27B004D3D14 /* libglfw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A6909D551717F27B004D3D14 /* libglfw.dylib */; };
+		A6909D5A1717F468004D3D14 /* GameWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6909D581717F468004D3D14 /* GameWindow.cpp */; };
+		A6909D5E171818E2004D3D14 /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6909D5C171818E2004D3D14 /* Sprite.cpp */; };
+		A6909D61171894CA004D3D14 /* TowerArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6909D5F171894C9004D3D14 /* TowerArray.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +33,14 @@
 		A6909D471717F262004D3D14 /* OpenGLgame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLgame; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6909D4A1717F262004D3D14 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A6909D4C1717F262004D3D14 /* OpenGLgame.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = OpenGLgame.1; sourceTree = "<group>"; };
+		A6909D531717F274004D3D14 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		A6909D551717F27B004D3D14 /* libglfw.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.dylib; path = /usr/local/lib/libglfw.dylib; sourceTree = "<absolute>"; };
+		A6909D581717F468004D3D14 /* GameWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameWindow.cpp; sourceTree = "<group>"; };
+		A6909D591717F468004D3D14 /* GameWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWindow.h; sourceTree = "<group>"; };
+		A6909D5C171818E2004D3D14 /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite.cpp; sourceTree = "<group>"; };
+		A6909D5D171818E2004D3D14 /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
+		A6909D5F171894C9004D3D14 /* TowerArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TowerArray.cpp; sourceTree = "<group>"; };
+		A6909D60171894CA004D3D14 /* TowerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TowerArray.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6909D561717F27B004D3D14 /* libglfw.dylib in Frameworks */,
+				A6909D541717F274004D3D14 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,9 +76,26 @@
 			isa = PBXGroup;
 			children = (
 				A6909D4A1717F262004D3D14 /* main.cpp */,
+				A6909D581717F468004D3D14 /* GameWindow.cpp */,
+				A6909D591717F468004D3D14 /* GameWindow.h */,
+				A6909D5C171818E2004D3D14 /* Sprite.cpp */,
+				A6909D5D171818E2004D3D14 /* Sprite.h */,
+				A6909D5F171894C9004D3D14 /* TowerArray.cpp */,
+				A6909D60171894CA004D3D14 /* TowerArray.h */,
 				A6909D4C1717F262004D3D14 /* OpenGLgame.1 */,
+				A6909D571717F28C004D3D14 /* Frameworks */,
 			);
 			path = OpenGLgame;
+			sourceTree = "<group>";
+		};
+		A6909D571717F28C004D3D14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6909D551717F27B004D3D14 /* libglfw.dylib */,
+				A6909D531717F274004D3D14 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6909D4B1717F262004D3D14 /* main.cpp in Sources */,
+				A6909D5A1717F468004D3D14 /* GameWindow.cpp in Sources */,
+				A6909D5E171818E2004D3D14 /* Sprite.cpp in Sources */,
+				A6909D61171894CA004D3D14 /* TowerArray.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +188,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = "";
 			};
 			name = Debug;
 		};
@@ -179,7 +214,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				SDKROOT = macosx;
+				SDKROOT = "";
 			};
 			name = Release;
 		};
@@ -216,6 +251,7 @@
 				A6909D521717F262004D3D14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
