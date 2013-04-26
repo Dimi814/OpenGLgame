@@ -23,14 +23,20 @@ int main(int argc, char **argv)
     glfwSetKeyCallback(keyPressed);
     glfwSetMouseButtonCallback(mouseButtonPressed);
     
-    TowerArray *array;
-    
     gameWindow = new GameWindow();
+    
+    double currentTime = 0.0f;
     
     while (gameWindow->getRunning()) {
         
         gameWindow->draw();
-        gameWindow->update();
+        
+        currentTime += (glfwGetTime()-currentTime);
+        
+        if (currentTime >= 0.01f) {
+            currentTime = 0.0f;
+            gameWindow->update();
+        }
         
         gameWindow->setRunning(glfwGetWindowParam(GLFW_OPENED)&&!glfwGetKey(GLFW_KEY_ESC));
     }

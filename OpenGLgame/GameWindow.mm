@@ -38,9 +38,10 @@ GLuint GameWindow::loadTexture(const char *fileName)
     GLFWimage ufoImage;
     GLuint textureBufferID;
     
-    if(glfwReadImage(fileName, &ufoImage, NULL)) {
+    if(glfwReadImage( fileName, &ufoImage, NULL)) {
         std::cout << "fsfe" << std::endl;
     }
+    
     glGenTextures(1, &textureBufferID);
     glBindTexture(GL_TEXTURE_2D, textureBufferID);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, ufoImage.Width, ufoImage.Height, 0, GL_RGBA, GL_UNSIGNED_BYTE, ufoImage.Data);
@@ -79,23 +80,25 @@ void GameWindow::setupGL()
 
 }
 
-GameWindow::GameWindow(): _running(true), _width(800*16/9), _height(800), _playerUFO(0)
+
+GameWindow::GameWindow(): _running(true), _width(800*16/9), _height(800), _delta(0.0f) , _playerUFO(0)
 {
     setupGL();
     
     _ghostArray = new TowerArray();
     _starArray = new TowerArray();
     
-    _textureBufferIDghost = loadTexture("/Users/dimdon23/GHOST.tga");
-    _textureBufferIDufo = loadTexture("/Users/dimdon23/UFO.tga");
-    _textureBufferIDstar = loadTexture("/Users/dimdon23/star.tga");
 
+    _textureBufferIDghost = loadTexture("GHOST.tga");
+    _textureBufferIDufo = loadTexture("UFO.tga");
+    _textureBufferIDstar = loadTexture("star.tga");
+    
     _playerUFO.setTextureBufferID(_textureBufferIDufo);
     Vector2 position;
     position.x = _width/2;
     position.y = _height/2;
     _playerUFO.setPosition(position);
-    
+
     spawnGhost();
 }
 
@@ -286,11 +289,15 @@ void GameWindow::update()
     checkForOutOfBoundsSprites(_starArray);
     checkForOutOfBoundsSprites(_ghostArray);
     
-    if (glfwGetTime() >= 1.0f) {
-        glfwSetTime(0);
+   
+    if (glfwGetTime() >= 0.9f) {
+        std::cout <<  _delta << std::endl;
+        glfwSetTime(0.0f);
         spawnGhost();
-        std::cout <<  _starArray->getCount() << std::endl;
+        //std::cout <<  _delta << std::endl;
     }
+    
+    
     
     _playerUFO.updateSprite();
     updateSprites(_ghostArray);

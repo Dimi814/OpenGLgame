@@ -15,7 +15,6 @@
 #include "TowerArray.h"
 #include "math.h"
 
-
 class GameWindow
 {
 private:
@@ -23,6 +22,7 @@ private:
     bool _running;
     int _height;
     int _width;
+    double _delta;
     GLuint _vertexBufferID;
     GLuint _textureBufferIDufo;
     GLuint _textureBufferIDghost;

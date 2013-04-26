@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A68885281723380300CA85F9 /* GHOST.tga in CopyFiles */ = {isa = PBXBuildFile; fileRef = A6888525172337FE00CA85F9 /* GHOST.tga */; };
+		A68885291723380300CA85F9 /* star.tga in CopyFiles */ = {isa = PBXBuildFile; fileRef = A6888526172337FE00CA85F9 /* star.tga */; };
+		A688852A1723380300CA85F9 /* UFO.tga in CopyFiles */ = {isa = PBXBuildFile; fileRef = A6888527172337FE00CA85F9 /* UFO.tga */; };
 		A6909D4B1717F262004D3D14 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6909D4A1717F262004D3D14 /* main.cpp */; };
 		A6909D4D1717F262004D3D14 /* OpenGLgame.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A6909D4C1717F262004D3D14 /* OpenGLgame.1 */; };
 		A6909D541717F274004D3D14 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6909D531717F274004D3D14 /* OpenGL.framework */; };
 		A6909D561717F27B004D3D14 /* libglfw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A6909D551717F27B004D3D14 /* libglfw.dylib */; };
-		A6909D5A1717F468004D3D14 /* GameWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6909D581717F468004D3D14 /* GameWindow.cpp */; };
+		A6909D5A1717F468004D3D14 /* GameWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6909D581717F468004D3D14 /* GameWindow.mm */; };
 		A6909D5E171818E2004D3D14 /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6909D5C171818E2004D3D14 /* Sprite.cpp */; };
 		A6909D61171894CA004D3D14 /* TowerArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6909D5F171894C9004D3D14 /* TowerArray.cpp */; };
 /* End PBXBuildFile section */
@@ -19,26 +22,29 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		A6909D451717F262004D3D14 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				A68885281723380300CA85F9 /* GHOST.tga in CopyFiles */,
+				A68885291723380300CA85F9 /* star.tga in CopyFiles */,
+				A688852A1723380300CA85F9 /* UFO.tga in CopyFiles */,
 				A6909D4D1717F262004D3D14 /* OpenGLgame.1 in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A6885E4A171C5E4F0097D290 /* GHOST.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = GHOST.tga; path = ../../../GHOST.tga; sourceTree = "<group>"; };
-		A6885E4B171C5E4F0097D290 /* star.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = star.tga; path = ../../../star.tga; sourceTree = "<group>"; };
-		A6885E4C171C5E4F0097D290 /* UFO.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = UFO.tga; path = ../../../UFO.tga; sourceTree = "<group>"; };
+		A6888525172337FE00CA85F9 /* GHOST.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = GHOST.tga; path = OpenGLgame/GHOST.tga; sourceTree = "<group>"; };
+		A6888526172337FE00CA85F9 /* star.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = star.tga; path = OpenGLgame/star.tga; sourceTree = "<group>"; };
+		A6888527172337FE00CA85F9 /* UFO.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = UFO.tga; path = OpenGLgame/UFO.tga; sourceTree = "<group>"; };
 		A6909D471717F262004D3D14 /* OpenGLgame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLgame; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6909D4A1717F262004D3D14 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A6909D4C1717F262004D3D14 /* OpenGLgame.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = OpenGLgame.1; sourceTree = "<group>"; };
 		A6909D531717F274004D3D14 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		A6909D551717F27B004D3D14 /* libglfw.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.dylib; path = /usr/local/lib/libglfw.dylib; sourceTree = "<absolute>"; };
-		A6909D581717F468004D3D14 /* GameWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameWindow.cpp; sourceTree = "<group>"; };
+		A6909D581717F468004D3D14 /* GameWindow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameWindow.mm; sourceTree = "<group>"; };
 		A6909D591717F468004D3D14 /* GameWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWindow.h; sourceTree = "<group>"; };
 		A6909D5C171818E2004D3D14 /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite.cpp; sourceTree = "<group>"; };
 		A6909D5D171818E2004D3D14 /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
@@ -59,6 +65,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A646D61E171DE457008AE74E /* Rescources */ = {
+			isa = PBXGroup;
+			children = (
+				A6888525172337FE00CA85F9 /* GHOST.tga */,
+				A6888526172337FE00CA85F9 /* star.tga */,
+				A6888527172337FE00CA85F9 /* UFO.tga */,
+			);
+			name = Rescources;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		A6909D3E1717F262004D3D14 = {
 			isa = PBXGroup;
 			children = (
@@ -78,11 +95,9 @@
 		A6909D491717F262004D3D14 /* OpenGLgame */ = {
 			isa = PBXGroup;
 			children = (
+				A646D61E171DE457008AE74E /* Rescources */,
 				A6909D4A1717F262004D3D14 /* main.cpp */,
-				A6909D581717F468004D3D14 /* GameWindow.cpp */,
-				A6885E4A171C5E4F0097D290 /* GHOST.tga */,
-				A6885E4B171C5E4F0097D290 /* star.tga */,
-				A6885E4C171C5E4F0097D290 /* UFO.tga */,
+				A6909D581717F468004D3D14 /* GameWindow.mm */,
 				A6909D591717F468004D3D14 /* GameWindow.h */,
 				A6909D5C171818E2004D3D14 /* Sprite.cpp */,
 				A6909D5D171818E2004D3D14 /* Sprite.h */,
@@ -156,7 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6909D4B1717F262004D3D14 /* main.cpp in Sources */,
-				A6909D5A1717F468004D3D14 /* GameWindow.cpp in Sources */,
+				A6909D5A1717F468004D3D14 /* GameWindow.mm in Sources */,
 				A6909D5E171818E2004D3D14 /* Sprite.cpp in Sources */,
 				A6909D61171894CA004D3D14 /* TowerArray.cpp in Sources */,
 			);
